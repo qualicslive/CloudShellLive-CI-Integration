@@ -7,6 +7,11 @@ import os
 class SandboxTests(TestCase):
 
     def example_test(self):
-        print os.environ["TRAVIS"]
-        print os.environ["blueprintID"]
+        serverString = os.environ["SERVERSTRING"]
+        blueprintID = os.environ["BLUEPRINTID"]
+        authUn = os.environ["AUTHUN"]
+        authPw = os.environ["AUTHPW"]
+        authDom = os.environ["AUTHDOM"]
+        webServerName = os.environ["WEBSERVERNAME"]
+        
         pass

@@ -1,1 +1,2 @@
 # CloudShellLive-CI-Integration
+[![Build Status](https://travis-ci.org/QualiSystemsLab/CloudShellLive-CI-Integration.svg?branch=master)](https://travis-ci.org/QualiSystemsLab/CloudShellLive-CI-Integration)
