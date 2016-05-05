@@ -72,7 +72,8 @@ class SandboxTests(TestCase):
 
         # sandbox start request
         sbsr = requests.post(URI, data=json.dumps(body), headers=headers)
-
+        print sbsr.text
+        
         quickMap = {}
         sbsrobj = json.loads(sbsr.text)
 
