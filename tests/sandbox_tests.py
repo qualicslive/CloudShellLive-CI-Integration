@@ -126,4 +126,4 @@ class SandboxTests(TestCase):
         else:
             # not identical
             print "FAIL! Expected '" + needleCompare.strip() +"' and got '"+needle.strip()+"'"
-            exit(1)
+            exit(2)
