@@ -5,9 +5,16 @@ python:
 install:
     - pip install nose
     - pip install coveralls
+    - pip install requests
+    - pip install json
 
 script:
     - nosetests
 
 after_success:
     coveralls
+
+env:
+    global:
+        - blueprintID=ae6e0a79-dd62-4d07-b846-6e0a7f00fd5f
+        - webServerName=HP Serv1
