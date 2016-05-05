@@ -61,7 +61,7 @@ class SandboxTests(TestCase):
         # reserve sandbox
         body = {}
         body["duration"] = "PT30M"  # ISO 8601 for 30 minutes
-        body["name"] = "Triggered test from Travis" # Name of sandbox
+        body["name"] = "Travis Test " + os.environ["TRAVIS_BUILD_ID"]  # Name of sandbox
 
         headers = {}
         headers["Content-Type"] = "application/json"
@@ -78,6 +78,11 @@ class SandboxTests(TestCase):
 
         for component in sbsrobj["components"]:
             quickMap[component["name"]] = component
+            
+            if (component["name"] == webServerName):
+                for attr in component["attributes"]:
+                    if (attr["name"] == "HTTP IP"):
+                        testURL = attr["value"]
 
         sandboxID = sbsrobj["id"]
 
@@ -85,7 +90,6 @@ class SandboxTests(TestCase):
         # begin test
         ########################################
         # convert server name to IP since not in response?
-        testURL = os.environ["TESTURL"]
         tr = requests.get(testURL)
         testHTML = tr.text
 
