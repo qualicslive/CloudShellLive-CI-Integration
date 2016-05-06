@@ -44,6 +44,7 @@ class SandboxTests(TestCase):
         authPw = os.environ["AUTHPW"]
         authDom = os.environ["AUTHDOM"]
         webServerName = os.environ["WEBSERVERNAME"]
+        urlAttr = os.environ["URLATTR"]
         
         sandboxID = ""
 
@@ -61,7 +62,7 @@ class SandboxTests(TestCase):
         # reserve sandbox
         body = {}
         body["duration"] = "PT30M"  # ISO 8601 for 30 minutes
-        body["name"] = "Travis Test " + os.environ["TRAVIS_BUILD_ID"]  # Name of sandbox
+        body["name"] = "Travis Test " + os.environ["TRAVIS_BUILD_NUMBER"]  # Name of sandbox
 
         headers = {}
         headers["Content-Type"] = "application/json"
@@ -81,8 +82,9 @@ class SandboxTests(TestCase):
             quickMap[component["name"]] = component
             
             if (component["name"] == webServerName):
+                # find what IP to check pass/fail
                 for attr in component["attributes"]:
-                    if (attr["name"] == "HTTP IP"):
+                    if (attr["name"] == urlAttr):
                         testURL = attr["value"]
 
         sandboxID = sbsrobj["id"]
@@ -90,7 +92,6 @@ class SandboxTests(TestCase):
         ########################################
         # begin test
         ########################################
-        # convert server name to IP since not in response?
         tr = requests.get(testURL)
         testHTML = tr.text
 
