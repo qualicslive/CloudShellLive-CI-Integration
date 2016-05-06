@@ -30,7 +30,11 @@ class TestDocParser(HTMLParser):
             needle = data
 
 
-testURL = "http://grabosky.dyndns.org:9999/CSL/index.html"
+########################################
+# get sandbox details
+########################################
+sandboxID = os.environ["SANDBOX_ID"]
+testURL = "http://grabosky.dyndns.org:7777/index.html"
 
 time.sleep(120)
 
