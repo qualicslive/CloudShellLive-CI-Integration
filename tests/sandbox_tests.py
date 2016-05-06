@@ -3,6 +3,7 @@ import requests
 import json
 from HTMLParser import HTMLParser
 import os
+import time
 
 foundSearchString = False
 needleNode = "h1"
@@ -88,6 +89,8 @@ class SandboxTests(TestCase):
                         testURL = attr["value"]
 
         sandboxID = sbsrobj["id"]
+        
+        time.sleep(120)
 
         ########################################
         # begin test
