@@ -57,7 +57,7 @@ class SandboxTests(TestCase):
         URI = serverString+"/login"
         auth = {"username":authUn,"password":authPw,"domain":authDom}
         headers = {"Content-Type":"application/json"}
-        ar = requests.put(URI, data=json.dumps(auth), headers=headers)
+        ar = requests.put(URI, data=json.dumps(auth), headers=headers, verify=False)
         token = str(ar.content).replace('"','')
 
         # reserve sandbox
@@ -73,7 +73,7 @@ class SandboxTests(TestCase):
         URI = serverString+"/v1/blueprints/"+blueprintID+"/start"
 
         # sandbox start request
-        sbsr = requests.post(URI, data=json.dumps(body), headers=headers)
+        sbsr = requests.post(URI, data=json.dumps(body), headers=headers, verify=False)
         print sbsr.text
         
         quickMap = {}
