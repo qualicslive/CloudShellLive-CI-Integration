@@ -7,7 +7,7 @@ install:
 - pip install requests
 env:
   global:
-  - BLUEPRINTID=88946a8e-5db4-43f4-a29e-e267bec25dcc
+  - BLUEPRINTID=ac4afe4e-97c4-4394-8bb1-ad27cc048b56
   - WEBSERVERNAME="CI Web Server"
   - URLATTR="Web Interface"
   - secure: eHBbdRSycQmeoY07pPA6GaWj3ecpl5GuIDJ+vNVoQ/qQcUG/R41AhSCRLb6H5DIuQV+5Z+xCg4lRf1PxHfiVAN8DnBymEQll7IgJqIP/22t9PjVrk1AltuJsD+3zBWFvAyGfkzwvnPqJFcIZMhQ4rwsImZ0FYiK8x/SD63yzVRnx5Pr6BXyn6izkpFr2Uhvcv1aZUc+Mvvv7nBoz6RxVmY/BAI7mnDJSCFsZ4nwEw+JsWKIVjdDU6hRepaWaIjcKOmWn4BKoX+yhgqjRNPygy56vv5/tLOd6xlbwsWfu43QOD5OQzoKYccI/fH+NeheBjrA7CDgZkvFyzzBdK/qMO3piRYvzUAdhfbPPgg6WAoBBZsYNDs44zvnqAhnIllxGwwaAhH/S9tkmMysq56Q8Nt2vVSx00rrmHdIfkAMyyzxe71bZ83H4jPiYwye2jjrCLItUFt0WlMOjz1FFsWlkOp7tz9MBrvDq+P6pYINGXiotwcVp7t1CWs1/GGjzBg1VGMG3zKLjo/SX+kt/ooiAvGQ61aArL9Tm2qZsjW1+wFmvuCQt/hXnmS+WfOHPUIw1SE7v7GCzh1uNguWSFgpcx095fSgIg4bcCn94W1y68gJUpH7x23au4n4ivmFRJAd3rrzgu38FgOaToUDpW1cH+uCsQLFrsfOWn4wG36L/1xo=

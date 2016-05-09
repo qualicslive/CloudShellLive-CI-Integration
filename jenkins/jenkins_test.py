@@ -34,9 +34,9 @@ class TestDocParser(HTMLParser):
 # get sandbox details
 ########################################
 sandboxID = os.environ["SANDBOX_ID"]
-testURL = "http://grabosky.dyndns.org:7777/index.html"
+testURL = "http://10.0.46.96/index.html"
 
-time.sleep(120)
+time.sleep(60)
 
 ########################################
 # begin test
