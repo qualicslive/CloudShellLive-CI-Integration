@@ -113,7 +113,7 @@ class SandboxTests(TestCase):
         URI = serverString+"/v1/sandboxes/"+sandboxID+"/stop"
 
         # sandbox stop request
-        sbsr = requests.post(URI, headers=headers)
+        sbsr = requests.post(URI, headers=headers, verify=False)
 
         ########################################
         # do pass fail
