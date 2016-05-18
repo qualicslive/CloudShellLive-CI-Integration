@@ -90,7 +90,7 @@ class SandboxTests(TestCase):
 
         sandboxID = sbsrobj["id"]
         
-        time.sleep(180)
+        time.sleep(360)
 
         ########################################
         # begin test
