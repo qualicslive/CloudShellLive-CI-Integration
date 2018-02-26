@@ -39,7 +39,8 @@ class SandboxTests(TestCase):
         ########################################
         # pull data from encrypted travis keys:
         ########################################
-        serverString = os.environ["SERVERSTRING"]
+        #serverString = os.environ["SERVERSTRING"]
+        serverString = https://demo.quali.com:8443/api
         blueprintID = os.environ["BLUEPRINTID"]
         authUn = os.environ["AUTHUN"]
         authPw = os.environ["AUTHPW"]
