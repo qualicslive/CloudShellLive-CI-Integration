@@ -123,7 +123,7 @@ class SandboxTests(TestCase):
         if (needle.strip() == needleCompare.strip()):
             # identical
             print "PASS! Expected '" + needleCompare.strip() +"' and got '"+needle.strip()+"'"
-            pass
+            passuali
         elif (len(needle.strip()) == 0):
             # couldnt find node
             print "FAIL! Expected '" + needleCompare.strip() +"' and could not locate node '"+needleNode+"'"
