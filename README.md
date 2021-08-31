@@ -1,5 +1,5 @@
 # CloudShellLive-CI-Integration
-[![Build Status](https://travis-ci.org/QualiSystemsLab/CloudShellLive-CI-Integration.svg?branch=master)](https://travis-ci.org/QualiSystemsLab/CloudShellLive-CI-Integration)
+[![Build Status](https://app.travis-ci.com/github/qualicslive/CloudShellLive-CI-Integration.svg?branch=master)](https://app.travis-ci.com/github/qualicslive/CloudShellLive-CI-Integration)
 
 This repo is used to demonstrate how external build and testing solutions can integrate with CloudShell.
 
